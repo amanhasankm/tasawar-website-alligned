@@ -6,138 +6,144 @@
     <title>Our Services | Tasawar Documents Clearing</title>
     <style>
         /* General styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
 
-/* Header section */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #0073e6;
-    color: white;
-    position: relative; /* Ensure proper stacking of elements */
-    z-index: 10; /* Make sure header appears above other elements */
-}
+        /* Header section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #0073e6;
+            color: white;
+        }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
+        .logo {
+            display: flex;
+            align-items: center;
+        }
 
-.logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-.website-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+        .website-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
-/* Navbar */
-nav {
-    display: flex;
-    gap: 20px;
-}
+        /* Navbar */
+        nav {
+            display: flex;
+            gap: 20px;
+        }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
 
-nav a:hover {
-    background-color: #005bb5;
-}
+        nav a:hover {
+            background-color: #005bb5;
+        }
 
-/* Services Page */
-.services-page {
-    padding: 50px 20px;
-    text-align: center;
-    z-index: 5; /* Ensure services page content doesn't overlap the header */
-}
+        /* Services Page */
+        .services-page {
+            padding: 50px 20px;
+            text-align: center;
+        }
 
-.services-page h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #0073e6;
-}
+        .services-page h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #0073e6;
+        }
 
-/* Service Container */
-.service-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        /* Service Container */
+        .service-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.service-container img {
-    width: 100%; /* Ensures the image scales to the container width */
-    max-width: 300px; /* Limits the image's maximum width */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px;
-    object-fit: cover;
-    margin: 0 auto; /* Centers the image within its container */
-}
+        .service-container img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            margin: 0 auto;
+        }
 
-.service-content {
-    width: 55%;
-    text-align: left;
-    padding-left: 20px;
-}
+        .service-content {
+            width: 55%;
+            text-align: left;
+            padding-left: 20px;
+        }
 
-.service-content h3 {
-    font-size: 1.8rem;
-    color: #0073e6;
-    margin-bottom: 10px;
-}
+        .service-content h3 {
+            font-size: 1.8rem;
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
 
-.service-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
+        .service-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .service-container {
-        flex-direction: column;
-        text-align: center;
-    }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .service-container {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    .service-container img {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+            .service-container img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
 
-    .service-content {
-        width: 100%;
-        padding-left: 0;
-    }
-    
-    /* Ensure no overlap of hero image and content */
-    .hero {
-        position: relative;
-        z-index: 1; /* Keep hero image behind header */
-    }
-}
+            .service-content {
+                width: 100%;
+                padding-left: 0;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 10px 12px;
+            }
+
+            .services-page h2 {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -169,7 +175,7 @@ nav a:hover {
 
     <!-- Service 2 -->
     <div class="service-container">
-        <img src="assets/IMG_1997.JPG" alt="Visa Services">
+        <img src="assets/IMG_1997.JPG" alt="Visit/Tourist Visa">
         <div class="service-content">
             <h3>Visit/Tourist Visa</h3>
             <p>We assist with obtaining tourist visas for various countries, offering personalized guidance and hassle-free processing to ensure smooth travel.</p>
@@ -187,7 +193,7 @@ nav a:hover {
 
     <!-- Service 4 -->
     <div class="service-container">
-        <img src="assets/IMG_1998.PNG" alt="Translation Services">
+        <img src="assets/IMG_1998.PNG" alt="Translation">
         <div class="service-content">
             <h3>Translation</h3>
             <p>Our certified translation services ensure that all your documents, whether legal or personal, are translated accurately and efficiently in multiple languages.</p>
@@ -245,24 +251,6 @@ nav a:hover {
         <div class="service-content">
             <h3>PRO Services</h3>
             <p>Our Public Relations Officer (PRO) services help you manage all government-related paperwork and procedures efficiently for your business and personal needs.</p>
-        </div>
-    </div>
-
-    <!-- Service 11 -->
-    <div class="service-container">
-        <img src="assets/IMG_2005.jpg" alt="Occupational Health Card">
-        <div class="service-content">
-            <h3>Occupational Health Card</h3>
-            <p>We assist you in obtaining your Occupational Health Card for employment in the UAE, ensuring that you meet all health requirements for your job.</p>
-        </div>
-    </div>
-
-    <!-- Service 12 -->
-    <div class="service-container">
-        <img src="assets/IMG_2003.JPG" alt="Company License">
-        <div class="service-content">
-            <h3>Company License Renewal/Formation</h3>
-            <p>We offer services to help with the renewal and formation of your company’s business license, ensuring compliance with local laws and regulations.</p>
         </div>
     </div>
 </section>
