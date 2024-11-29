@@ -144,6 +144,45 @@
                 font-size: 2rem;
             }
         }
+         /* Footer Section */
+         footer {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .footer-logo img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+
+        footer .footer-info {
+            margin-bottom: 10px;
+        }
+
+        footer .footer-info p {
+            margin: 5px 0;
+        }
+
+        footer .footer-links {
+            margin-top: 10px;
+        }
+
+        footer .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer .footer-links a:hover {
+            color: #00d4ff;
+        }
     </style>
 </head>
 <body>
@@ -155,17 +194,19 @@
     </div>
     <nav>
         <a href="index.html">Home</a>
-        <a href="#aboutus">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contactus">Contact Us</a>
+        <a href="aboutus.html" class="active">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contactus.html">Contact Us</a>
     </nav>
 </header>
 
 <section class="services-page">
     <h2>Our Services</h2>
+    <p>With a team of experts, we ensure quick, efficient, and accurate document services. From document attestation to visa applications, our services cater to both individuals and businesses in various countries.
+    </p>
 
     <!-- Service 1 -->
-    <div class="service-container">
+    <div class="service-container" id="Documents Clearing">
         <img src="assets/IMG_1995.JPG" alt="Documents Clearing">
         <div class="service-content">
             <h3>Documents Clearing</h3>
@@ -174,7 +215,7 @@
     </div>
 
     <!-- Service 2 -->
-    <div class="service-container">
+    <div class="service-container" id="visa-services">
         <img src="assets/IMG_1997.JPG" alt="Visit/Tourist Visa">
         <div class="service-content">
             <h3>Visit/Tourist Visa</h3>
@@ -192,7 +233,7 @@
     </div>
 
     <!-- Service 4 -->
-    <div class="service-container">
+    <div class="service-container" id="Translation">
         <img src="assets/IMG_1998.PNG" alt="Translation">
         <div class="service-content">
             <h3>Translation</h3>
@@ -210,7 +251,7 @@
     </div>
 
     <!-- Service 6 -->
-    <div class="service-container">
+    <div class="service-container" id="Tasheel">
         <img src="assets/IMG_2001.JPG" alt="Tasheel Services">
         <div class="service-content">
             <h3>Tasheel Services</h3>
@@ -246,7 +287,7 @@
     </div>
 
     <!-- Service 10 -->
-    <div class="service-container">
+    <div class="service-container" id="pro-services">
         <img src="assets/IMG_2004.PNG" alt="PRO Services">
         <div class="service-content">
             <h3>PRO Services</h3>
@@ -254,6 +295,27 @@
         </div>
     </div>
 </section>
+<footer>
+    <div class="footer-logo">
+        <img src="assets/CF4AB429-B1A5-4465-B123-A3D63BB87066_4_5005_c.jpeg" alt="Brand Logo">
+    </div>
+    <div class="footer-info">
+        <p><strong>Tasawar Documents Clearing</strong></p>
+        <p>Location: Deira, Dubai, UAE</p>
+        <img src="assets/uae.png" alt="UAE Flag" style="width: 40px; height: auto;">
+    </div>
+    <div class="footer-links">
+        <strong>Services: </strong>
+        <a href="services.html#Documents Clearing">Document Attestation</a>
+        <a href="services.html#Translation">Legal Translation</a>
+        <a href="services.html#visa-services">Visa Services</a>
+        <a href="services.html#Tasheel">Tasheel Services</a>
+        <a href="services.html#pro-services">PRO Services</a>
+    </div>
+    <div class="footer-credit">
+        <p>Designed by <strong>AH</strong></p>
+    </div>
+</footer>
 
 </body>
 </html>

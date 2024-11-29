@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasawar Documents Clearing</title>
+    <title>About Us - Tasawar Documents Clearing</title>
     <style>
         /* General styles */
         body {
@@ -13,7 +13,7 @@
             box-sizing: border-box;
         }
 
-        /* Header section */
+        /* Navbar */
         header {
             display: flex;
             justify-content: space-between;
@@ -42,7 +42,7 @@
             letter-spacing: 1px;
         }
 
-        /* Navbar */
+        /* Navbar Links */
         nav {
             display: flex;
             gap: 20px;
@@ -63,39 +63,23 @@
 
         /* Hero section */
         .hero {
-            position: relative;
             width: 100%;
-            height: 100vh;
-            overflow: hidden;
+            background-color: #ffffff;
+            color: #0073e6;
+            text-align: center;
+            padding: 40px 20px;
         }
 
-        .hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
-            color: white;
-            text-align: left;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 90%;
-        }
-
-        .hero-text h1 {
+        .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
 
-        .hero-text p {
+        .hero p {
             font-size: 1.2rem;
             line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* Content Section */
@@ -118,33 +102,86 @@
             margin-bottom: 30px;
         }
 
-        .services {
+        .metrics {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
+            margin-bottom: 40px;
         }
 
-        .service-item {
+        .metric-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .metric-item h3 {
+            font-size: 2rem;
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
+
+        .metric-item p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Reviews */
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .review-item {
             background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .service-item h3 {
-            color: #0073e6;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .service-item p {
+        .review-item p {
             color: #666;
             font-size: 1rem;
             line-height: 1.6;
         }
 
-        /* Footer Section */
-        footer {
+        /* Countries */
+        .countries {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .country-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: #000000;
+        }
+
+        .country-item img {
+            width: 50px;
+            height: 35px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: #000000;
+        }
+
+        .country-item p {
+            color: #000000;
+            font-size: 1rem;
+        }
+
+         /* Footer Section */
+         footer {
             background-color: #0073e6;
             color: white;
             padding: 20px;
@@ -185,11 +222,11 @@
 
         /* Responsive styles */
         @media (max-width: 768px) {
-            .hero-text h1 {
+            .hero h1 {
                 font-size: 2rem;
             }
 
-            .hero-text p {
+            .hero p {
                 font-size: 1rem;
             }
 
@@ -212,6 +249,7 @@
 </head>
 <body>
 
+<!-- Navbar -->
 <header>
     <div class="logo">
         <img src="assets/CF4AB429-B1A5-4465-B123-A3D63BB87066_4_5005_c.jpeg" alt="Brand Logo">
@@ -225,38 +263,95 @@
     </nav>
 </header>
 
+<!-- Hero Section -->
 <section class="hero">
-    <img src="assets/dubai-downtown-day-night-transition-600nw-779374966.webp" alt="Hero Image">
-    <div class="hero-text">
-        <h1>Welcome to Tasawar Documents Clearing</h1>
-        <p>Your trusted partner for all document attestation and professional services. We simplify your processes with seamless solutions tailored to your needs.</p>
+    <h1>About Tasawar Documents Clearing</h1>
+    <p style="color: #000000;">We specialize in providing professional and reliable document clearing, attestation, visa, and translation services. Our mission is to make international document processing seamless for individuals and businesses worldwide.</p>
+</section>
+
+<!-- Content Section -->
+
+    <div class="metrics">
+        <div class="metric-item">
+            <h3>10+ Years</h3>
+            <p>Years of Experience in Document Services</p>
+        </div>
+        <div class="metric-item">
+            <h3>1000+</h3>
+            <p>Successful Projects Delivered</p>
+        </div>
+        <div class="metric-item">
+            <h3>50+</h3>
+            <p>Countries Served Globally</p>
+        </div>
+        <div class="metric-item">
+            <h3>500+</h3>
+            <p>Happy Clients</p>
+        </div>
+    </div>
+
+    <h2>Customer Reviews :</h2>
+    <div class="reviews">
+        <div class="review-item">
+            <h3>John Doe, Business Owner</h3>
+            <p>"Tasawar Documents Clearing made my visa process so easy and efficient. They handled everything with professionalism."</p>
+        </div>
+        <div class="review-item">
+            <h3>Jane Smith, Expatriate</h3>
+            <p>"I highly recommend their legal translation services. My documents were processed quickly, and everything was accurate!"</p>
+        </div>
+        <div class="review-item">
+            <h3>Michael Lee, Student</h3>
+            <p>"Thanks to Tasawar, my document attestation was done in no time! Excellent service and friendly team."</p>
+        </div>
+    </div>
+
+    <h2>Countries We Serve :</h2>
+    <div class="countries">
+        <div class="country-item">
+            <img src="assets/uae.png" alt="UAE Flag">
+            <p>UAE</p>
+        </div>
+        <div class="country-item">
+            <img src="assets/Flag-Saudi-Arabia.webp" alt="Saudi Flag">
+            <p>Saudi Arabia</p>
+        </div>
+        <div class="country-item">
+            <img src="assets/Flag_of_India.svg.png" alt="India Flag">
+            <p>India</p>
+        </div>
+        <div class="country-item">
+            <img src="assets/Flag-Kuwait.webp" alt="Kuwait Flag">
+            <p>Kuwait</p>
+        </div>
+        <div class="country-item">
+            <img src="assets/qatar.jpg" alt="Qatar Flag">
+            <p>Qatar</p>
+        </div>
+        <div class="country-item">
+            <img src="assets/oman.png" alt="Oman Flag">
+            <p>Oman</p>
+        </div>
+        <div class="country-item">
+            <img src="assets/usa.webp" alt="USA Flag">
+            <p>USA</p>
+        </div>
+        <div class="country-item">
+            <img src="assets/uk.png" alt="UK Flag">
+            <p>UK</p>
+        </div>
+        <div class="country-item">
+            <img src="assets/GERMNY.png" alt="germany flag">
+            <p>Germany</p>
+        </div>
+        <div class="country-item">
+            <img src="assets/canada.webp" alt="Canada Flag">
+            <p>Canada</p>
+        </div>
     </div>
 </section>
 
-<section class="content">
-    <h2>Our Services</h2>
-    <p>We provide a wide range of document clearing and attestation services to meet your individual and corporate needs. With our professional team, we ensure efficiency and accuracy every step of the way.</p>
-
-    <div class="services">
-        <div class="service-item">
-            <h3>Document Attestation</h3>
-            <p>Get your documents attested by authorized government and embassy authorities with our hassle-free service.</p>
-        </div>
-        <div class="service-item">
-            <h3>Legal Translation</h3>
-            <p>We provide certified translation services for all legal documents in multiple languages.</p>
-        </div>
-        <div class="service-item">
-            <h3>Visa Services</h3>
-            <p>From visa applications to renewals, we handle all visa-related formalities for individuals and businesses.</p>
-        </div>
-        <div class="service-item">
-            <h3>Business Setup Assistance</h3>
-            <p>Start your business with ease! We guide you through company registration, trade licenses, and more.</p>
-        </div>
-    </div>
-</section>
-
+<!-- Footer -->
 <footer>
     <div class="footer-logo">
         <img src="assets/CF4AB429-B1A5-4465-B123-A3D63BB87066_4_5005_c.jpeg" alt="Brand Logo">

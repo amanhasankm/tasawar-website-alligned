@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasawar Documents Clearing</title>
+    <title>Contact Us - Tasawar Documents Clearing</title>
     <style>
         /* General styles */
         body {
@@ -13,7 +13,7 @@
             box-sizing: border-box;
         }
 
-        /* Header section */
+        /* Navbar */
         header {
             display: flex;
             justify-content: space-between;
@@ -42,7 +42,7 @@
             letter-spacing: 1px;
         }
 
-        /* Navbar */
+        /* Navbar Links */
         nav {
             display: flex;
             gap: 20px;
@@ -61,86 +61,63 @@
             background-color: #005bb5;
         }
 
-        /* Hero section */
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
-            color: white;
-            text-align: left;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 90%;
-        }
-
-        .hero-text h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .hero-text p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-
-        /* Content Section */
-        .content {
-            padding: 40px 20px;
+        /* Contact Form Section */
+        .contact-section {
             background-color: #f9f9f9;
+            padding: 50px 20px;
             text-align: center;
         }
 
-        .content h2 {
+        .contact-section h2 {
             font-size: 2rem;
             margin-bottom: 20px;
             color: #0073e6;
         }
 
-        .content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .service-item {
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
             background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .service-item h3 {
-            color: #0073e6;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
         }
 
-        .service-item p {
-            color: #666;
+        .contact-form input[type="submit"] {
+            background-color: #0073e6;
+            color: white;
             font-size: 1rem;
-            line-height: 1.6;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #005bb5;
+        }
+
+        .mailto-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #0073e6;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .mailto-link:hover {
+            text-decoration: underline;
         }
 
         /* Footer Section */
@@ -183,18 +160,16 @@
             color: #00d4ff;
         }
 
+
         /* Responsive styles */
         @media (max-width: 768px) {
-            .hero-text h1 {
+            .hero h1 {
                 font-size: 2rem;
             }
 
-            .hero-text p {
-                font-size: 1rem;
-            }
-
-            .content p {
-                font-size: 1rem;
+            .contact-form input,
+            .contact-form textarea {
+                font-size: 0.9rem;
             }
 
             nav {
@@ -212,6 +187,7 @@
 </head>
 <body>
 
+<!-- Navbar -->
 <header>
     <div class="logo">
         <img src="assets/CF4AB429-B1A5-4465-B123-A3D63BB87066_4_5005_c.jpeg" alt="Brand Logo">
@@ -225,38 +201,23 @@
     </nav>
 </header>
 
-<section class="hero">
-    <img src="assets/dubai-downtown-day-night-transition-600nw-779374966.webp" alt="Hero Image">
-    <div class="hero-text">
-        <h1>Welcome to Tasawar Documents Clearing</h1>
-        <p>Your trusted partner for all document attestation and professional services. We simplify your processes with seamless solutions tailored to your needs.</p>
-    </div>
+<!-- Contact Form Section -->
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, please feel free to reach out to us. We're here to help!</p>
+
+    <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+
+    <a href="mailto:tasawar.dc@gmail.com" class="mailto-link">Or email us directly at our tasawar.dc@gmail.com</a>
 </section>
 
-<section class="content">
-    <h2>Our Services</h2>
-    <p>We provide a wide range of document clearing and attestation services to meet your individual and corporate needs. With our professional team, we ensure efficiency and accuracy every step of the way.</p>
-
-    <div class="services">
-        <div class="service-item">
-            <h3>Document Attestation</h3>
-            <p>Get your documents attested by authorized government and embassy authorities with our hassle-free service.</p>
-        </div>
-        <div class="service-item">
-            <h3>Legal Translation</h3>
-            <p>We provide certified translation services for all legal documents in multiple languages.</p>
-        </div>
-        <div class="service-item">
-            <h3>Visa Services</h3>
-            <p>From visa applications to renewals, we handle all visa-related formalities for individuals and businesses.</p>
-        </div>
-        <div class="service-item">
-            <h3>Business Setup Assistance</h3>
-            <p>Start your business with ease! We guide you through company registration, trade licenses, and more.</p>
-        </div>
-    </div>
-</section>
-
+<!-- Footer -->
 <footer>
     <div class="footer-logo">
         <img src="assets/CF4AB429-B1A5-4465-B123-A3D63BB87066_4_5005_c.jpeg" alt="Brand Logo">
