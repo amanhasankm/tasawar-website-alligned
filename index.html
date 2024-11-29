@@ -21,6 +21,7 @@
             padding: 15px 20px;
             background-color: #0073e6;
             color: white;
+            position: relative;
         }
 
         .logo {
@@ -59,6 +60,13 @@
 
         nav a:hover {
             background-color: #005bb5;
+        }
+
+        /* Mobile menu icon */
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
         }
 
         /* Hero section */
@@ -156,7 +164,36 @@
             .content p {
                 font-size: 1rem;
             }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #0073e6;
+                padding: 10px;
+                border-radius: 5px;
+                width: 200px;
+                gap: 10px;
+            }
+
+            nav a {
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .menu-icon {
+                display: block;
+                color: white;
+                margin-left: auto;
+            }
+
+            .menu-icon.active + nav {
+                display: flex;
+            }
         }
+
     </style>
 </head>
 <body>
@@ -166,6 +203,7 @@
         <img src="assets/CF4AB429-B1A5-4465-B123-A3D63BB87066_4_5005_c.jpeg" alt="Brand Logo">
         <span class="website-name">Tasawar Documents Clearing</span>
     </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     <nav>
         <a href="#home">Home</a>
         <a href="#aboutus">About Us</a>
@@ -205,6 +243,12 @@
         </div>
     </div>
 </section>
+
+<script>
+    function toggleMenu() {
+        document.querySelector('.menu-icon').classList.toggle('active');
+    }
+</script>
 
 </body>
 </html>
